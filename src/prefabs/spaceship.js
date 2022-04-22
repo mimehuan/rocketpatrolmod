@@ -6,9 +6,11 @@ class Spaceship extends Phaser.GameObjects.Sprite {
         this.points = pointValue;   // store pointValue
         this.moveSpeed = game.settings.spaceshipSpeed;         // pixels per frame
     }
+    
 
     update() {
         // move spaceship left
+        //this.anims.play('duck');
         this.x -= this.moveSpeed;
         // wrap around from left edge to right edge
         if(this.x <= 0 - this.width) {
@@ -20,4 +22,11 @@ class Spaceship extends Phaser.GameObjects.Sprite {
     reset() {
         this.x = game.config.width;
     }
+
+    faster_ship(speed){
+        this.moveSpeed = speed;
+    }
+
 }
+
+
