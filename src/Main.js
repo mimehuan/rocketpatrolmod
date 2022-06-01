@@ -2,9 +2,9 @@ let config = {
     type: Phaser.CANVAS,
     width: 700,
     height: 500,
-    scene: [ Menu, Play ]
+    scene: [Menu, Play]
 }
-
+//please work
 let game = new Phaser.Game(config);
 
 // set UI sizes
