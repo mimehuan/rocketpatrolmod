@@ -4,7 +4,7 @@ let config = {
     height: 500,
     scene: [Menu, Play]
 }
-//please work
+//please work PLEASE
 let game = new Phaser.Game(config);
 
 // set UI sizes
